@@ -44,7 +44,6 @@ public class PlayerMovement : MonoBehaviour
     private void Move(Vector2 inputDirection)
     {
         _moveDirection = new Vector3(inputDirection.x, inputDirection.y, transform.position.z);
-       // transform.position += _moveDirection * _moveSpeed * Time.deltaTime;
         _rigidBody.transform.Translate(_moveDirection * _moveSpeed * Time.deltaTime);
     }
 

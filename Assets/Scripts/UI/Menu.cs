@@ -48,7 +48,7 @@ public class Menu : MonoBehaviour
         _menuPanel.SetActive(false);
         _aboutPanel.SetActive(true);
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
 
         _aboutPanel.SetActive(false);
         _menuPanel.SetActive(true);

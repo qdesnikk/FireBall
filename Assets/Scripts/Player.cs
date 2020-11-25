@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private Text _coinsCountText;
+    [SerializeField] private Text _text;
 
-    private int _coinsCount;
+    private int _coins;
 
     private void Awake()
     {
-        _coinsCount = 0;
+        _coins = 0;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
 
     private void TakeCoin()
     {
-        _coinsCount++;
-        _coinsCountText.text = _coinsCount.ToString();
+        _coins++;
+        _text.text = _coins.ToString();
     }
 }
